@@ -1,105 +1,152 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
-
-.blurry-img{
-    background-image: url(./WhatsApp\ Image\ 2022-06-09\ at\ 7.56.21\ PM.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    filter: blur(5px);
+.background{
     height: 100vh;
     width: 100vw;
-}
-
-.container{
-    display: flex;
-    justify-content: center;
-    position: absolute;
-
-    height: 400px;
-    width: 700px;
-
-    top: 80px;
-    left: 240px;
-
-    background-color: white;
-}
-
-.img{
-    background-image: url(./IMG_20220319_105658.jpg);
+    background-image: url(./background.jpeg);
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    width: 400px;
-    height: 100%;
+    filter: blur(8px);
+    position: absolute;
 }
-
-.forms{
-    width: 300px;
-    height: 100%;
-}
-
-.forms-child{
-    margin: 20px 50px;
-}
-
-.line{
-    height:5px;
-    width: 183px;
-    background-image: linear-gradient(to right, purple, pink);
-
-    margin: 5px 0px;
-}
-
-input{
-    outline: none;
-    border: none;
-    height: 40px;
-    width: 176px;
-
-    font-size: 100%;
-}
-
-.continue{
-    display:flex;
-    position: relative;
-}
-
-.box-continue{
-    width: 190px;
-    height: 30px;
-    background-image: linear-gradient(to right, purple, pink);
-
+.parent{
+    height:100vh;
+    width:100vw;
+    /* background-color: azure; */
+    position:absolute;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-.right-arrow{
-    background-image: url(./right-arrow.png);
-    background-size: cover;
-    height: 20px;
-    width: 20px;
-    right: 31px;
-    position: absolute;
-    top: 6px;
-    /* background-color: yellow; */
+.container-i{
+    width:80%;
+    height:90%;
+    background-color: #ffffff;
+    border-radius: 4px;
+    display:flex;
+    padding: 0;
 }
-
-.twitter-logo{
-    /* background-image: url(./s/twitter-logo.png); */
-    /* height: ; */
+.image{
+    width:55%;
+    height: 100%;
+    background-image: url(./IMG_20220319_105658.jpg);
+    border-radius: 4px 0 0px 4px;
 }
+.form{
+   
+    width: 45%;
+    padding: 50px;
 
-.box-twitter-sign-in{
-    width: 190px;
+}
+.heading-text{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display: inline;   
+}
+.heading{   
+    padding-top: 30px;
+}
+.username-field{
+    outline: none;
+    width: 100%;
     height: 30px;
-    background-color: #00b9ff;
+    margin-top: 20px;
+    font-size: 14px;
+    
+    border: none;
+    box-sizing: border-box;
 }
+.username{
+   
+    width:100%;
+    
+}
+.underline{
+    width: 100%;
+    height:3px;
+    background-image: linear-gradient(to right, blue,rgb(255, 0, 170),rgb(247, 0, 255));
+}
+.inputs{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.button-continue{
+    height: 35px;
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(85, 85, 243),rgb(247, 0, 255));
+    display: flex;
+}
+.button-continue1{
+    height: 35px;
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(31, 119, 179),rgb(151, 213, 248));
+    display: flex;
+}
+.button-continue2{
+    height: 35px;
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(7, 61, 122),rgb(6, 100, 240));
+    display: flex;
+}
+.continue-text{
+    width:90%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.continue-text1{
+    width:80%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+.continue-txt{
+    font-size: 13px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.continue-txt1{
+    font-size: 13px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 
-.box-facebook-sign-in{
-    width: 190px;
-    height: 30px;
-    background-color: #3b5998;
+}
+.logo{
+    background-image: url(./pngwing.com.png);
+    /* background-color: red; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    width: 10%;
+    height: 100%;
+    filter: invert();
+}
+.logo1{
+    background-image: url(./facebook-logo.png);
+    /* background-color: red; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    left:30px;
+    width: 20%;
+    top:50%;
+    transform: translate(0,-50%);
+    height: 60%;
+    filter: invert();
+}
+.logo2{
+    background-image: url(./twitter.png);
+    /* background-color: red; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    left:25px;
+    width: 20%;
+    height: 100%;
+    /* filter: invert(); */
 }
